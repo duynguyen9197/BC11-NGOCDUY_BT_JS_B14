@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form>
+      <label>Khu vuc</label>
+      <select id="Area">
+        <option value="2">A</option>
+        <option value="1">B</option>
+        <option value="0.5">C</option>
+        <option value="0">X</option>
+      </select>
+      <label>Đối tượng</label>
+      <select id="Object">
+        <option value="2.5">1</option>
+        <option value="1.5">2</option>
+        <option value="1">3</option>
+        <option value="0">0</option>
+      </select>
+      <div class="row">
+        <div class="col-4">
+          <input
+            type="number"
+            min="0"
+            max="10"
+            id="mon_1"
+            class="form-control"
+            placeholder="Điểm môn thứ 1"
+          />
+          <input
+            type="number"
+            min="0"
+            max="10"
+            id="mon_2"
+            placeholder="Điểm môn thứ 2"
+            class="form-control"
+          />
+          <input
+            type="number"
+            min="0"
+            max="10"
+            id="mon_3"
+            placeholder="Điểm môn thứ 3"
+            class="form-control"
+          />
+          <input
+            type="number"
+            min="0"
+            max="30"
+            id="diemChuan"
+            placeholder="Điểm môn chuẩn"
+            class="form-control"
+          />
+
+          <button class="btn btn-info" id="ketqua">Kết quả</button>
+        </div>
+      </div>
+    </form>
+    <div id="ShowtongDiem"></div>
+    <div id="trungTuyen"></div>
+
+    <!-- bt tính thuế -->
+    <form action="">
+      <div class="row">
+        <div class="col-4">
+          <input type="text" id="name" placeholder="Họ Tên" />
+          <input
+            class="w-50"
+            type="number"
+            id="thunhap"
+            placeholder="Tổng thu nhập 'Triệu Đồng'"
+          />
+          <input type="number" id="soNguoi" placeholder="Số NGười phụ thuộc" />
+          <button id="Tax" class="btn btn-warning d-block">Xuất Thuế</button>
+        </div>
+      </div>
+    </form>
+    <div id="showTax"></div>
+    <!-- bt tính tiền điện -->
+    <form action="">
+      <div class="row">
+        <div class="col-3">
+          <input type="text " id="ten" class="d-block" placeholder="Tên" />
+          <input
+            type="number"
+            min="0"
+            id="soKy"
+            class="d-block"
+            placeholder="Số KW"
+          />
+          <button class="btn btn-danger" id="tienDien">Tính tiền điện</button>
+        </div>
+      </div>
+    </form>
+    <div id="showTienDien"></div>
+    <form>
+      <div class="row">
+        <div class="col-4">
+          <input
+            type="number"
+            id="maKH"
+            min="1"
+            max="2"
+            placeholder="Mã khách hàng"
+            class="d-block form-control"
+          />
+          <input
+            type="number"
+            id="stk"
+            placeholder="Số tài khoản"
+            class="d-block form-control"
+            min="1"
+          />
+          <input
+            type="number"
+            id="channel"
+            placeholder="Số kênh"
+            class="d-block form-control"
+            min="1"
+          />
+          <input
+            type="number"
+            id="ketNoiThem"
+            placeholder="Số kết nối"
+            class="d-block form-control"
+            min="1"
+          />
+          <button class="btn btn-dark" id="xuatHoaDon">Xuất hóa đơn</button>
+        </div>
+      </div>
+    </form>
+    <div id="showHoaDon">Hóa đơn chỗ này</div>
+    <script src="/main.js"></script>
+  </body>
+</html>
